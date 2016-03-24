@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="400" height="20" tilewidth="32" tileheight="32" nextobjectid="169">
+ <tileset firstgid="1" name="Tiles02-02" tilewidth="32" tileheight="32" tilecount="240">
+  <image source="Tiles/Tiles02-02.png" width="512" height="480"/>
+  <tile id="85">
+   <properties>
+    <property name="Pass" value="True"/>
+   </properties>
+  </tile>
+  <tile id="233">
+   <properties>
+    <property name="Collision" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="241" name="Tiles02-01" tilewidth="32" tileheight="32" tilecount="192">
+  <image source="Tiles/Tiles02-01.png" width="512" height="384"/>
+ </tileset>
+ <layer name="Foreground" width="400" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1QERgDAMBMFiBQfFAZjDNjURvoXdmUjIX2sAAAAAAAAAAAAAAAAAAAAAAAAAAPzVvc19QL0+fm3/4B02pFS6D/oBeemdrzzqpPugH5CX3nj9WFO6D/oBeemN1w+ANZ0T7HzFXfoBAAC86AHu9Hr4
+  </data>
+ </layer>
+ <layer name="Background" width="400" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztmVtuxCAMRfnLEvJVzQq6hC6h3ehssqrUjxYNBGyDMTlHutIow8MxxJfJpAQAACDjcfH5URAAANybFv8AX54VAQB4kntFyVMANOB9MsgXrIyHf3CWhhrsD/t7H53LZ/Z5xbVbNa7olN5X3fH3B7VLz+z8SeYaGaNmD9X6SGKtxaG579Z71ObXap14lsdR8w/+P/clf3bwtflozxQt7VvHlniR9Ptan944PLF6Xvgfch6WeT5/dXWtFfaADRZ1tWeM3rnydl5rbXlGH1G3e3PaS+96jdgHrWNRD/bD2j8ksMdisup7qnwc6ZxX7VbB27tnzfNqbUoeNbt9a5+eNhqk4/b0O1PdP0oe4lXvj0IMmmuSPVG79jfGVGhbi0WCdo9Yjt0y38j9YjXXq34jcmHdXtrHYjyPGGfVHvjPmdr8Y+bvkBpHKtfmlYgSJ0B08A4fcn+48g9vDzlSnLocKVaAiMx85+HB28J65Q0t/nE6xXukWDU5j9d7vRHaSbt7xw/vARUl/tXxzg9Cd9DOfARUlPhXxzs/CN1BO/MZUFHiXx3v/CB0B+2Mtzdr/dw7lsjnDu/8IHQH7Yy3N2v93DuWyOeOr+SfI4R2FwAAAAAAAOj5Bhpwiq8=
+  </data>
+ </layer>
+ <layer name="Meta" width="400" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztmVuOwyAMRbvK2f93VzE/I40aNcTYhovhHOlKVUrgxjaPtK8XAAAAAAAAwD/vhgAAAHaHvc8H8QL4hLM0tKA+8p99dCzfl88r5m5VX7APrF1xZsfPM9ZIj5Eaat3j8dryEXlu6zNG45uVJ+ZyDj9/ghpc5w772nyiZwpLe2vfnr3I+33rnl4fSrLmC/9Dzts/MuN8d3by9nl6DWSRsa729NE71rWdKteZZ/QR63ZvTHvpzdeIOrD2xXrQpuL7R/b+EfFAjdViZM6yasLzTjHi3WIk6r171jjfcnO3R81ub72np00Eb7/eM6fletRblLv4R655auLp2p13ixcP0RrJ7Nsy3sh6yRrr230jYpHd3ntPRn8Kj7PWHviklT/F3vDESl5aVPEJUB3mmYanM5rq/eKOVXxYqOQVoCLMLx1Pv9NY28xiBQ89VPMLUIkT5lXP7+urqIr/1VHHB6ETtDPq2EbzofZSuW7U8UHoBO2MOrbRfKi9VK4bdXwQOkE7o45tNB9qL5XrRh0fhE7QzqhjixBCqKYAAAAAAABm8Qta1Tfs
+  </data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="63" name="Player" x="46" y="306" width="63" height="53">
+   <ellipse/>
+  </object>
+  <object id="64" name="Enemy" type="Normal" x="592" y="242" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="68" name="Enemy" type="Normal" x="848" y="350" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="69" name="Enemy" type="Normal" x="1053" y="227" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="70" name="Enemy" type="Normal" x="1275" y="269" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="71" name="Enemy" type="Normal" x="1656" y="266" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="72" name="Enemy" type="Normal" x="2083" y="167" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="73" name="Enemy" type="Normal" x="2098" y="341" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="74" name="Enemy" type="Normal" x="2506" y="177" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="75" name="Enemy" type="Normal" x="3481" y="235" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="76" name="Enemy" type="Normal" x="4270" y="339" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="77" name="Enemy" type="Normal" x="4285" y="223" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="78" name="Enemy" type="Normal" x="4794" y="323" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="79" name="Enemy" type="Normal" x="5192" y="327" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="80" name="Enemy" type="Normal" x="5218" y="163" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="81" name="Enemy" type="Normal" x="5740" y="92" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="82" name="Enemy" type="Normal" x="6170" y="92" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="83" name="Enemy" type="Normal" x="6709" y="348" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="84" name="Enemy" type="Normal" x="7170" y="219" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="85" name="Enemy" type="Normal" x="7480" y="327" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="86" name="Enemy" type="Normal" x="7880" y="218" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="87" name="Enemy" type="Normal" x="8190" y="339" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="88" name="Enemy" type="Normal" x="8707" y="82" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="89" name="Enemy" type="Normal" x="9416" y="150" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="90" name="Enemy" type="Normal" x="9633" y="338" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="91" name="Enemy" type="Normal" x="10362" y="156" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="92" name="Enemy" type="Normal" x="10436" y="331" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="93" name="Enemy" type="Normal" x="10922" y="188" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="94" name="Enemy" type="Normal" x="11221" y="184" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="95" name="Enemy" type="Normal" x="11638" y="184" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="96" name="Enemy" type="Normal" x="12640" y="177" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0101.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0102.wav"/>
+    <property name="Texture" value="02-MyLittlePony/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="97" name="Enemy" type="Normal" x="601" y="359" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="98" name="Enemy" type="Normal" x="860" y="159" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="99" name="Enemy" type="Normal" x="1029" y="53" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="100" name="Enemy" type="Normal" x="1072" y="354" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="101" name="Enemy" type="Normal" x="1543" y="166" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="102" name="Enemy" type="Normal" x="1846" y="224" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="103" name="Enemy" type="Normal" x="2446" y="342" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="104" name="Enemy" type="Normal" x="2328" y="102" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="105" name="Enemy" type="Normal" x="2904" y="203" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="106" name="Enemy" type="Normal" x="3076" y="205" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="107" name="Enemy" type="Normal" x="3414" y="128" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="108" name="Enemy" type="Normal" x="3514" y="3" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="109" name="Enemy" type="Normal" x="3788" y="230" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="110" name="Enemy" type="Normal" x="3930" y="227" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="111" name="Enemy" type="Normal" x="4525" y="346" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="112" name="Enemy" type="Normal" x="4630" y="157" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="113" name="Enemy" type="Normal" x="5010" y="215" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="114" name="Enemy" type="Normal" x="5430" y="218" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="115" name="Enemy" type="Normal" x="5929" y="345" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="116" name="Enemy" type="Normal" x="5943" y="157" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="117" name="Enemy" type="Normal" x="6357" y="213" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="118" name="Enemy" type="Normal" x="6568" y="121" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="119" name="Enemy" type="Normal" x="7410" y="61" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="120" name="Enemy" type="Normal" x="7910" y="346" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="121" name="Enemy" type="Normal" x="8305" y="139" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="122" name="Enemy" type="Normal" x="8880" y="340" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="123" name="Enemy" type="Normal" x="8846" y="212" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="124" name="Enemy" type="Normal" x="9868" y="190" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="125" name="Enemy" type="Normal" x="10102" y="345" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="126" name="Enemy" type="Normal" x="10779" y="335" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="127" name="Enemy" type="Normal" x="10595" y="222" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="128" name="Enemy" type="Normal" x="11522" y="183" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="129" name="Enemy" type="Normal" x="11319" y="177" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="130" name="Enemy" type="Normal" x="12358" y="170" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0201.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0202.wav"/>
+    <property name="Texture" value="02-MyLittlePony/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="131" name="Enemy" type="Normal" x="766" y="167" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="132" name="Enemy" type="Normal" x="969" y="338" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="133" name="Enemy" type="Normal" x="1117" y="52" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="134" name="Enemy" type="Normal" x="1981" y="341" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="135" name="Enemy" type="Normal" x="2175" y="94" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="136" name="Enemy" type="Normal" x="2273" y="336" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="137" name="Enemy" type="Normal" x="3538" y="125" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="138" name="Enemy" type="Normal" x="3589" y="235" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="139" name="Enemy" type="Normal" x="3204" y="206" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="140" name="Enemy" type="Normal" x="4413" y="343" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="141" name="Enemy" type="Normal" x="4885" y="97" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="142" name="Enemy" type="Normal" x="5018" y="21" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="143" name="Enemy" type="Normal" x="5002" y="346" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="144" name="Enemy" type="Normal" x="5419" y="63" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="145" name="Enemy" type="Normal" x="5575" y="147" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="146" name="Enemy" type="Normal" x="5595" y="352" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="147" name="Enemy" type="Normal" x="5742" y="225" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="148" name="Enemy" type="Normal" x="6749" y="192" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="149" name="Enemy" type="Normal" x="6959" y="97" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="150" name="Enemy" type="Normal" x="7005" y="345" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="151" name="Enemy" type="Normal" x="7302" y="111" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="152" name="Enemy" type="Normal" x="7666" y="190" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="153" name="Enemy" type="Normal" x="7643" y="340" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="154" name="Enemy" type="Normal" x="7327" y="341" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="155" name="Enemy" type="Normal" x="8055" y="65" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="156" name="Enemy" type="Normal" x="8476" y="205" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="157" name="Enemy" type="Normal" x="8540" y="343" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="158" name="Enemy" type="Normal" x="8963" y="45" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="159" name="Enemy" type="Normal" x="9247" y="198" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="160" name="Enemy" type="Normal" x="9167" y="343" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="161" name="Enemy" type="Normal" x="9707" y="138" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="162" name="Enemy" type="Normal" x="10172" y="67" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="163" name="Enemy" type="Normal" x="10691" y="122" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="164" name="Enemy" type="Normal" x="10325" y="331" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="165" name="Enemy" type="Normal" x="10660" y="330" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="166" name="Enemy" type="Normal" x="11719" y="181" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="167" name="Enemy" type="Normal" x="12107" y="169" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0301.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0302.wav"/>
+    <property name="Texture" value="02-MyLittlePony/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="168" name="Enemy" type="Branch" x="9884" y="341" width="54" height="40">
+   <properties>
+    <property name="AttEffect" value="02-MyLittlePony/0401.wav"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0402.wav"/>
+    <property name="Texture" value="02-MyLittlePony/04.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

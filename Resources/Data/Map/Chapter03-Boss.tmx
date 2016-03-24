@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" nextobjectid="7">
+ <tileset firstgid="1" name="Tiles03-03" tilewidth="32" tileheight="32" tilecount="240">
+  <image source="Tiles/Tiles03-03.png" width="512" height="480"/>
+ </tileset>
+ <tileset firstgid="241" name="Tiles03-04" tilewidth="32" tileheight="32" tilecount="128">
+  <image source="Tiles/Tiles03-04.png" width="512" height="256"/>
+  <tile id="72">
+   <properties>
+    <property name="Collision" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Background" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF9ADFOHAJkerI0YOujlT3UqJ/1F6EmSUM+OMOlxg6PQoGDhAbJ7jUkatvpIFEIE4aALoQiIsGgG4E4qYBoCcC8aQBoEeafwGF9Hbt
+  </data>
+ </layer>
+ <layer name="Meta" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF9ACWjLgxserI0UOpe+kNhpO9pMQdqfpGAX0BsXFCTv4lxfxRQBtAbLyN4lFMCgYAAsYw8Q==
+  </data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="1" name="Player" x="16" y="402" width="34" height="44"/>
+  <object id="2" name="Enemy" type="Boss" x="457" y="24" width="48" height="44">
+   <properties>
+    <property name="AI" value="03-LoveLive/06.dat"/>
+    <property name="AttEffect" value="03-LoveLive/0601.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0600.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0602.wav"/>
+    <property name="From" value="Up"/>
+    <property name="Texture" value="03-LoveLive/06.png"/>
+    <property name="To" value="Up"/>
+   </properties>
+  </object>
+  <object id="4" name="BossPos1" x="235" y="156" width="39" height="38">
+   <properties>
+    <property name="From" value="Left"/>
+    <property name="To" value="Left"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="6" name="BossPos2" x="674.5" y="157" width="39" height="38">
+   <properties>
+    <property name="From" value="Right"/>
+    <property name="To" value="Right"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

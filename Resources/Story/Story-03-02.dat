@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>character0</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/None.png</string>
+		<key>sentence0</key>
+		<string></string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character1</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/妮可.png</string>
+		<key>sentence0</key>
+		<string>妮可妮可妮~</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character2</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/游乐.png</string>
+		<key>sentence0</key>
+		<string>...</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character3</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/妮可.png</string>
+		<key>sentence0</key>
+		<string>妮可妮可妮可妮~</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character4</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/游乐.png</string>
+		<key>sentence0</key>
+		<string>......</string>
+		<key>sentence1</key>
+		<string>看来语言不通，我们直接上吧...</string>
+		<key>number</key>
+		<integer>2</integer>
+	</dict>
+	<key>number</key>
+	<integer>5</integer>
+</dict>
+</plist>

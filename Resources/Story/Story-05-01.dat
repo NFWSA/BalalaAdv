@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>character0</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/小蓝.png</string>
+		<key>sentence0</key>
+		<string>不是只有四个世界么？这里又是哪儿？</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character1</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/游乐.png</string>
+		<key>sentence0</key>
+		<string>据说是个新兴的邪教，所以我们才赶来看看，说不定能提前消灭他们。</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character2</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/黑魔仙.png</string>
+		<key>sentence0</key>
+		<string>那我们快走吧。</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>number</key>
+	<integer>3</integer>
+</dict>
+</plist>

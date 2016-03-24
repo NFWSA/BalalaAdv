@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="200" height="20" tilewidth="32" tileheight="32" nextobjectid="43">
+ <tileset firstgid="1" name="Tiles01-01" tilewidth="32" tileheight="32" spacing="1" margin="1" tilecount="48">
+  <image source="Tiles/Tiles01-01.png" width="265" height="199"/>
+ </tileset>
+ <tileset firstgid="49" name="Tiles01-02" tilewidth="32" tileheight="32" tilecount="192">
+  <image source="Tiles/Tiles01-02.png" width="512" height="384"/>
+  <tile id="91">
+   <properties>
+    <property name="Pass" value="True"/>
+   </properties>
+  </tile>
+  <tile id="177">
+   <properties>
+    <property name="Collision" value="True"/>
+   </properties>
+  </tile>
+  <tile id="187">
+   <properties>
+    <property name="WillDead" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Background" width="200" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1rENgDAMBEBqxmD/ISloAxIkFpZ9J32L8wEC2wYAAADAKvsgzInY0073qVPXaPaSv3j21vNtmdOpazR7Cdzpdj5U6lupy0p/7Yu5Oa+ZcW7UvG7nQaW+lbo8ydTz7TpWvbfmzs+t1CXTvEgZ1xSpUt9KXQAgwugfTESuHCIiIh9yAsLARAM=
+  </data>
+ </layer>
+ <layer name="Meta" width="200" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1kEOgzAMBED+L17JS7jQE6RSm1hY9oy0V8wGEtg2AAAAAFY5HsKciDXt9Jw6dY1mLXmLd28935Y5nbpGs5bASLfzoVLfSl1WemtdzM15zYxzo+Z1Ow8q9a3U5ZtMPX+9j1X71tz5uZW6ZJoXKeM9RarUt1KXkf0KcGd/wNhnfzz9g4mIiIjI/zkBweW04Q==
+  </data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="1" name="Player" x="90.3333" y="416.5" width="24" height="62"/>
+  <object id="2" name="Enemy" type="Normal" x="612.333" y="306.5" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0101.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0102.wav"/>
+    <property name="Texture" value="01-KanColle/01.png"/>
+   </properties>
+  </object>
+  <object id="3" name="Enemy" type="Fly" x="1508" y="30.8333" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+  <object id="4" name="Enemy" type="Shoot" x="1028.83" y="397" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0201.wav"/>
+    <property name="BallTexture" value="01-KanColle/0200.png"/>
+    <property name="DeadEffect" value="01-KanColle/0202.wav"/>
+    <property name="Texture" value="01-KanColle/02.png"/>
+   </properties>
+  </object>
+  <object id="13" name="Enemy" type="Fly" x="1590.5" y="19.5" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+  <object id="14" name="Enemy" type="Fly" x="2263.83" y="14.1667" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+  <object id="15" name="Enemy" type="Fly" x="2562.5" y="130.167" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+  <object id="16" name="Enemy" type="Fly" x="3454.5" y="158.167" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+  <object id="17" name="Enemy" type="Fly" x="3677.17" y="354.167" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+  <object id="18" name="Enemy" type="Fly" x="4547.83" y="104.833" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+  <object id="19" name="Enemy" type="Fly" x="5098.5" y="295.5" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+  <object id="20" name="Enemy" type="Fly" x="5253.17" y="24.8333" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+  <object id="21" name="Enemy" type="Fly" x="5751.83" y="12.8333" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+  <object id="22" name="Enemy" type="Fly" x="5841.17" y="14.1667" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+  <object id="23" name="Enemy" type="Normal" x="45.1667" y="142.833" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0101.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0102.wav"/>
+    <property name="Texture" value="01-KanColle/01.png"/>
+   </properties>
+  </object>
+  <object id="24" name="Enemy" type="Normal" x="1021.17" y="204.167" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0101.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0102.wav"/>
+    <property name="Texture" value="01-KanColle/01.png"/>
+   </properties>
+  </object>
+  <object id="25" name="Enemy" type="Normal" x="1611.83" y="450.833" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0101.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0102.wav"/>
+    <property name="Texture" value="01-KanColle/01.png"/>
+   </properties>
+  </object>
+  <object id="26" name="Enemy" type="Normal" x="2249.17" y="366.833" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0101.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0102.wav"/>
+    <property name="Texture" value="01-KanColle/01.png"/>
+   </properties>
+  </object>
+  <object id="27" name="Enemy" type="Normal" x="2906.5" y="401.5" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0101.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0102.wav"/>
+    <property name="Texture" value="01-KanColle/01.png"/>
+   </properties>
+  </object>
+  <object id="28" name="Enemy" type="Normal" x="3793.17" y="114.833" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0101.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0102.wav"/>
+    <property name="Texture" value="01-KanColle/01.png"/>
+   </properties>
+  </object>
+  <object id="29" name="Enemy" type="Normal" x="4325.17" y="465.5" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0101.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0102.wav"/>
+    <property name="Texture" value="01-KanColle/01.png"/>
+   </properties>
+  </object>
+  <object id="30" name="Enemy" type="Normal" x="4269.17" y="465.5" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0101.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0102.wav"/>
+    <property name="Texture" value="01-KanColle/01.png"/>
+   </properties>
+  </object>
+  <object id="31" name="Enemy" type="Normal" x="5673.17" y="452.167" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0101.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0102.wav"/>
+    <property name="Texture" value="01-KanColle/01.png"/>
+   </properties>
+  </object>
+  <object id="32" name="Enemy" type="Shoot" x="810.5" y="364.167" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0201.wav"/>
+    <property name="BallTexture" value="01-KanColle/0200.png"/>
+    <property name="DeadEffect" value="01-KanColle/0202.wav"/>
+    <property name="Texture" value="01-KanColle/02.png"/>
+   </properties>
+  </object>
+  <object id="33" name="Enemy" type="Shoot" x="1506.5" y="290.833" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0201.wav"/>
+    <property name="BallTexture" value="01-KanColle/0200.png"/>
+    <property name="DeadEffect" value="01-KanColle/0202.wav"/>
+    <property name="Texture" value="01-KanColle/02.png"/>
+   </properties>
+  </object>
+  <object id="34" name="Enemy" type="Shoot" x="2510.5" y="305.5" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0201.wav"/>
+    <property name="BallTexture" value="01-KanColle/0200.png"/>
+    <property name="DeadEffect" value="01-KanColle/0202.wav"/>
+    <property name="Texture" value="01-KanColle/02.png"/>
+   </properties>
+  </object>
+  <object id="35" name="Enemy" type="Shoot" x="2917.17" y="201.5" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0201.wav"/>
+    <property name="BallTexture" value="01-KanColle/0200.png"/>
+    <property name="DeadEffect" value="01-KanColle/0202.wav"/>
+    <property name="Texture" value="01-KanColle/02.png"/>
+   </properties>
+  </object>
+  <object id="36" name="Enemy" type="Shoot" x="3697.17" y="113.5" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0201.wav"/>
+    <property name="BallTexture" value="01-KanColle/0200.png"/>
+    <property name="DeadEffect" value="01-KanColle/0202.wav"/>
+    <property name="Texture" value="01-KanColle/02.png"/>
+   </properties>
+  </object>
+  <object id="37" name="Enemy" type="Shoot" x="4658.5" y="277.5" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0201.wav"/>
+    <property name="BallTexture" value="01-KanColle/0200.png"/>
+    <property name="DeadEffect" value="01-KanColle/0202.wav"/>
+    <property name="Texture" value="01-KanColle/02.png"/>
+   </properties>
+  </object>
+  <object id="38" name="Enemy" type="Shoot" x="5487.83" y="204.167" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0201.wav"/>
+    <property name="BallTexture" value="01-KanColle/0200.png"/>
+    <property name="DeadEffect" value="01-KanColle/0202.wav"/>
+    <property name="Texture" value="01-KanColle/02.png"/>
+   </properties>
+  </object>
+  <object id="39" name="Enemy" type="Shoot" x="6005.17" y="302.833" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0201.wav"/>
+    <property name="BallTexture" value="01-KanColle/0200.png"/>
+    <property name="DeadEffect" value="01-KanColle/0202.wav"/>
+    <property name="Texture" value="01-KanColle/02.png"/>
+   </properties>
+  </object>
+  <object id="40" name="Enemy" type="Shoot" x="4025.17" y="176.167" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0201.wav"/>
+    <property name="BallTexture" value="01-KanColle/0200.png"/>
+    <property name="DeadEffect" value="01-KanColle/0202.wav"/>
+    <property name="Texture" value="01-KanColle/02.png"/>
+   </properties>
+  </object>
+  <object id="41" name="Enemy" type="Branch" x="1989.17" y="450.833" width="27" height="37">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0401.wav"/>
+    <property name="DeadEffect" value="01-KanColle/0402.wav"/>
+    <property name="Texture" value="01-KanColle/04.png"/>
+   </properties>
+  </object>
+  <object id="42" name="Enemy" type="FlyShoot" x="1820.5" y="30.5" width="35" height="41">
+   <properties>
+    <property name="AttEffect" value="01-KanColle/0301.wav"/>
+    <property name="BallTexture" value="01-KanColle/0200.png"/>
+    <property name="DeadEffect" value="01-KanColle/0302.wav"/>
+    <property name="Texture" value="01-KanColle/03.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

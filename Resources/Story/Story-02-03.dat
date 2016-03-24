@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>character0</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/游乐.png</string>
+		<key>sentence0</key>
+		<string>愿新生的你们世界，能够更加纯粹美好。</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character1</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/塞拉斯提亚.png</string>
+		<key>sentence0</key>
+		<string>原来...你们只是为了净化么......谢谢你了...陌生人...以后...有缘再见吧...</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character2</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/None.png</string>
+		<key>sentence0</key>
+		<string>《彩虹小马》世界被净化了</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>number</key>
+	<integer>3</integer>
+</dict>
+</plist>

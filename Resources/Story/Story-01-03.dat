@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>character0</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/None.png</string>
+		<key>sentence0</key>
+		<string></string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character1</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/岛风.png</string>
+		<key>sentence0</key>
+		<string>...再见了...这个世界...愿我们以后还能更好的给大家带来快乐...</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character2</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/游乐.png</string>
+		<key>sentence0</key>
+		<string>当“死宅”们不再是“死宅”的时候，会的。</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character3</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/岛风.png</string>
+		<key>sentence0</key>
+		<string>这样么...谢谢...我懂了...</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character4</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/None.png</string>
+		<key>sentence0</key>
+		<string>《舰队Collection》世界被[净化]了</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>number</key>
+	<integer>5</integer>
+</dict>
+</plist>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>character0</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/小蓝.png</string>
+		<key>sentence0</key>
+		<string>听说这里的人们，都是为了实现梦想而在不断努力的呢。</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character1</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/None.png</string>
+		<key>sentence0</key>
+		<string></string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character2</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/黑魔仙.png</string>
+		<key>sentence0</key>
+		<string>可惜，当世界被污染以后，好的梦想只会更加破坏现实罢了。</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>number</key>
+	<integer>3</integer>
+</dict>
+</plist>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" nextobjectid="8">
+ <tileset firstgid="1" name="Tiles02-03" tilewidth="32" tileheight="32" tilecount="128">
+  <image source="Tiles/Tiles02-03.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="129" name="Tiles02-04" tilewidth="32" tileheight="32" tilecount="192">
+  <image source="Tiles/Tiles02-04.png" width="512" height="384"/>
+  <tile id="153">
+   <properties>
+    <property name="Collision" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Background" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFgwVoomFC4uSYScgMdHtJNZccN5JiL7UBpe4ejICUeKFW/I0C2gBS4ocSdSM9zhMHACcBceEA4CIgTgfijBFElwNxxQDQAArkSH4=
+  </data>
+ </layer>
+ <layer name="Meta" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFgwVIMaJiQuLkmEnIDHR7STWXHDeSYi+1AaXuHoyAlHihVvyNAtoAUuKHEnWjcT4wgFA5OoqHNgYAuGgS/Q==
+  </data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="1" name="Player" x="16" y="427" width="38" height="66"/>
+  <object id="2" name="Enemy" type="Boss" x="81" y="37" width="32" height="49">
+   <properties>
+    <property name="AI" value="02-MyLittlePony/05.dat"/>
+    <property name="AttEffect" value="02-MyLittlePony/0501.wav"/>
+    <property name="BallTexture" value="02-MyLittlePony/0500.png"/>
+    <property name="DeadEffect" value="02-MyLittlePony/0502.wav"/>
+    <property name="From" value="Left"/>
+    <property name="Texture" value="02-MyLittlePony/05.png"/>
+    <property name="To" value="Left"/>
+   </properties>
+  </object>
+  <object id="3" name="BossPos1" x="428" y="21" width="40" height="52">
+   <properties>
+    <property name="From" value="Up"/>
+    <property name="To" value="Up"/>
+   </properties>
+  </object>
+  <object id="5" name="BossPos2" x="782" y="53" width="40" height="52">
+   <properties>
+    <property name="From" value="Right"/>
+    <property name="To" value="Left"/>
+   </properties>
+  </object>
+  <object id="6" name="BossPos3" x="232" y="185" width="40" height="52">
+   <properties>
+    <property name="From" value="Left"/>
+    <property name="To" value="Left"/>
+   </properties>
+  </object>
+  <object id="7" name="BossPos4" x="616" y="187" width="40" height="52">
+   <properties>
+    <property name="From" value="Right"/>
+    <property name="To" value="Left"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

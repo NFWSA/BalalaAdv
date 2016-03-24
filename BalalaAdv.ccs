@@ -1,0 +1,20 @@
+<Solution>
+  <PropertyGroup Name="BalalaAdv" Version="2.3.2.3" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Image Name="HelloWorld.png" />
+        <Project Name="Skeleton.csd" Type="Skeleton" />
+        <Folder Name="youle">
+          <Image Name="youle-1.png" />
+          <Image Name="youle-2.png" />
+          <Image Name="youle-3.png" />
+          <Image Name="youle-4.png" />
+          <Image Name="youle-5.png" />
+          <Image Name="youle-6.png" />
+        </Folder>
+        <Project Name="Scene.csd" Type="Scene" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

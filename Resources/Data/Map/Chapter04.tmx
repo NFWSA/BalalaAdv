@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="300" height="20" tilewidth="32" tileheight="32" nextobjectid="207">
+ <tileset firstgid="1" name="Tiles04-01" tilewidth="32" tileheight="32" tilecount="140">
+  <image source="Tiles/Tiles04-01.png" width="640" height="224"/>
+ </tileset>
+ <tileset firstgid="141" name="Tiles04-02" tilewidth="32" tileheight="32" spacing="1" margin="1" tilecount="2">
+  <image source="Tiles/Tiles04-02.png" width="67" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="Pass" value="True"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Collision" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Background" width="300" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztnAFuwyAMRTlHz9DcwZfYDrE7tGefKg0JeTYYYxOT8CUrbROo82ZcQ9BS6tdb0WZ1ae95s/Jvt7IOZbs7sXoMtp/N6ruws7TKGNys5DqT1UFYj+7A6kEYJcwQv5ew+iZMq5/CrCX1k7vnK7Gy8kHCihqrK7FqSeonl6euxGrUh9H6SqIfwrAonhY5vKcviZ/eOpNVzY+IsmbVU9dYx5W2tpLqCnHVqq0+auV2K1E8LcbKzHHXqq+s5MXqI684xYrIque7z4qrs8YgMG24z7FmxVWvevySXnswrzXfGUkerEa/M2pd5c3qQEdtP1pZ5iBrVoAsEcevRj8WcWVRX+G5c49f0mtb+UrDQlLzcues1mQ8WHHKPnD9eI3N6KyoHJE/mxlXVL7E/pzBCiptobAZcfVAR428n01wf79RSeYH3LlVnnlhUXOvkbEpUWRWrTjSxJk2rkbqqzPjChrnLeMK11c4/9XW37K9hdddyfI9b1ablYdtVjLD+a+2/pbtLbzuirZZbVabVQxOUnnVoh61upUiz3E08mQZcc92Oe+CRM+PgbjWWy9luxlxBen/eju2mSrvmapLJe2sVIuR7NtX5RpvRWJVU1k711h5cKRyQHRW+RnXWSrzVURW8HekWAG+2FnlPZf11uy9ta3fs7IetPztk/r3URRWLWFWnDQMpX6Wfa/CylpSP8t8xbGi3s9gBYl+Fvgszs+UZ46WzD2l64+9kvbVMzdekVXtOWs+9nCX+Om1r7HHBwkrzT5Ma1besmAFxbX5tSRfWY7nrDwGJX9Ljxi0Xlfj+sXSsJSwot5bScOK86H0z3NMRWUFyKdEfC7p11LRWUHR5pna8mCVx+Bonz3j3yrvjvSjYbkiq1oN5VX/UPu7tPJkBX/HA733qAskisoKEp2rnp39WMjqfw70jH+rvKvpZ4Tv3VlRvLh5VnlM6FzP+pUXK2B8gM5+srSsPuKeD0aJKyhe47rKixWnqz2jb2lk/N+dFcWLOjcyb7kbq48i72fw0Mjaj3aP7B331m5WcRmvbK/Nquuea+ttnN1xb+1mFZfxyvbarLru+Rf82h/c
+  </data>
+ </layer>
+ <layer name="Meta" width="300" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztmAGLwyAMRvf/4fzN4+AOZDgbY6LRvAdhhWH9fItd29drnKIYczraNePKf1xGcCUnoyv2oBxc+YMrOatdlap2ccoexNXYfLtdacGVLaVREYmQM0KGVo6IRHH1RIScETK0cpxKy6fFmm7xU+Pl6kboKzn0FZwGfQoeROmrz7lHclmtYbULq3cyuJKPy+BKSzZXP3+lIfLv2ENyz/vtO6s9GAmvfrvRVY+ZvpqZMyoefZXxejVDtj04A678yebq/3r1dF9J9e+5KFzhao8nKdpxJ4MrfzK6oq/k4EoOrvzJ6Iq+klM+jqUOVruavR+0ylAf40oGrp4z1Me46mfwPLfFs6cnI/myu/olQs4IGSREyBkhgyW781u/V/t2XgtwdQ64knOSq1J93uJfgsZlVlcz4EoOrp6xetc3+lxlcd1d/V+HK38yuqKvxuZbOW43M36zu2qt47Znbi0zruirsbHaObOBK38yuqKv5PTetVEURUWrN4ATOcM=
+  </data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="1" name="Player" x="8" y="181" width="32" height="60"/>
+  <object id="3" name="Enemy" type="Shoot" x="620" y="435" width="42" height="58">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="5" name="Enemy" type="Shoot" x="792" y="198" width="42" height="58">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="7" name="Enemy" type="Shoot" x="1115" y="521" width="42" height="58">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="8" name="Enemy" type="Shoot" x="1260" y="205" width="42" height="58">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="10" name="Enemy" type="Shoot" x="2062" y="531" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="13" name="Enemy" type="Shoot" x="1714" y="386.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="14" name="Enemy" type="Shoot" x="1565" y="459.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="17" name="Enemy" type="Shoot" x="1175" y="386.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="18" name="Enemy" type="Shoot" x="1758" y="544.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="21" name="Enemy" type="Shoot" x="1629" y="545.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="23" name="Enemy" type="Shoot" x="3121" y="41.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="25" name="Enemy" type="Shoot" x="2997" y="115.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="26" name="Enemy" type="Shoot" x="3335" y="113.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="27" name="Enemy" type="Shoot" x="3168" y="352.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="28" name="Enemy" type="Shoot" x="2959" y="451.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="29" name="Enemy" type="Shoot" x="3336" y="453.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="31" name="Enemy" type="Shoot" x="3880" y="123.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="34" name="Enemy" type="Shoot" x="3931" y="439.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="35" name="Enemy" type="Shoot" x="4361" y="484.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="37" name="Enemy" type="Shoot" x="4297" y="214.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="40" name="Enemy" type="Shoot" x="5575" y="348.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="41" name="Enemy" type="Shoot" x="5399" y="451.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="42" name="Enemy" type="Shoot" x="5737" y="451.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="45" name="Enemy" type="Shoot" x="5404" y="133.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="46" name="Enemy" type="Shoot" x="5737" y="134.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="47" name="Enemy" type="Shoot" x="6126" y="551.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="49" name="Enemy" type="Shoot" x="6319" y="132.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="50" name="Enemy" type="Shoot" x="6432" y="549.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="52" name="Enemy" type="Shoot" x="6763" y="165.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="53" name="Enemy" type="Shoot" x="6919" y="27.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="56" name="Enemy" type="Shoot" x="6937" y="351.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="62" name="Enemy" type="Shoot" x="8960" y="385.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="64" name="Enemy" type="Shoot" x="9123" y="225.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="65" name="Enemy" type="Shoot" x="9049" y="33.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="66" name="Enemy" type="Shoot" x="8324" y="537.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="69" name="Enemy" type="Shoot" x="8257" y="218.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="70" name="Enemy" type="Shoot" x="7969" y="25.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="71" name="Enemy" type="Shoot" x="7974" y="353.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="72" name="Enemy" type="Shoot" x="7793" y="117.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="73" name="Enemy" type="Shoot" x="7792" y="437.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="75" name="Enemy" type="Shoot" x="8136" y="127.5" width="24" height="41">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0201.wav"/>
+    <property name="BallTexture" value="04-EastProject/0200.png"/>
+    <property name="DeadEffect" value="04-EastProject/0202.wav"/>
+    <property name="Texture" value="04-EastProject/02.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="76" name="Enemy" type="Normal" x="570" y="124" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="78" name="Enemy" type="Normal" x="812.5" y="540.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="80" name="Enemy" type="Normal" x="2175.5" y="536.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="81" name="Enemy" type="Normal" x="2221.5" y="535.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="83" name="Enemy" type="Normal" x="2316.5" y="534.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="84" name="Enemy" type="Normal" x="1926.5" y="157.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="87" name="Enemy" type="Normal" x="2089.5" y="224.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="88" name="Enemy" type="Normal" x="1658.5" y="214.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="90" name="Enemy" type="Normal" x="1382.5" y="549.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="95" name="Enemy" type="Normal" x="1409.5" y="210.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="96" name="Enemy" type="Normal" x="923.5" y="450.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="98" name="Enemy" type="Normal" x="3182.5" y="546.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="99" name="Enemy" type="Normal" x="4139.5" y="381.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="100" name="Enemy" type="Normal" x="4142.5" y="539.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="101" name="Enemy" type="Normal" x="4522.5" y="357.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="102" name="Enemy" type="Normal" x="4075.5" y="161.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="104" name="Enemy" type="Normal" x="4233.5" y="24.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="107" name="Enemy" type="Normal" x="4645.5" y="216.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="109" name="Enemy" type="Normal" x="3556.5" y="217.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="112" name="Enemy" type="Normal" x="3165.5" y="213.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="113" name="Enemy" type="Normal" x="3757.5" y="219.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="114" name="Enemy" type="Normal" x="5852.5" y="388.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="116" name="Enemy" type="Normal" x="6143.5" y="204.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="117" name="Enemy" type="Normal" x="6602.5" y="542.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="119" name="Enemy" type="Normal" x="6559.5" y="58.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="120" name="Enemy" type="Normal" x="6567.5" y="217.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="121" name="Enemy" type="Normal" x="6995.5" y="483.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="122" name="Enemy" type="Normal" x="7113.5" y="536.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="123" name="Enemy" type="Normal" x="6913.5" y="218.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="129" name="Enemy" type="Normal" x="9387.5" y="547.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="132" name="Enemy" type="Normal" x="9211.5" y="480.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="134" name="Enemy" type="Normal" x="8990.5" y="545.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="136" name="Enemy" type="Normal" x="8872.5" y="549.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="137" name="Enemy" type="Normal" x="8877.5" y="167.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="139" name="Enemy" type="Normal" x="8726.5" y="226.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="141" name="Enemy" type="Normal" x="8713.5" y="452.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="144" name="Enemy" type="Normal" x="8318.5" y="391.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="148" name="Enemy" type="Normal" x="8500.5" y="548.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="149" name="Enemy" type="Normal" x="8477.5" y="229.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="150" name="Enemy" type="Normal" x="8356.5" y="66.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="151" name="Enemy" type="Normal" x="7979.5" y="542.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="152" name="Enemy" type="Normal" x="7978.5" y="224.5" width="25" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0101.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0102.wav"/>
+    <property name="Texture" value="04-EastProject/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="154" name="Enemy" type="FlyShoot" x="2264" y="342" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="158" name="Enemy" type="FlyShoot" x="1601" y="325.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="160" name="Enemy" type="FlyShoot" x="1255" y="325.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="162" name="Enemy" type="FlyShoot" x="907" y="326.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="165" name="Enemy" type="FlyShoot" x="811" y="14.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="167" name="Enemy" type="FlyShoot" x="1167" y="24.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="169" name="Enemy" type="FlyShoot" x="1598" y="41.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="170" name="Enemy" type="FlyShoot" x="1980" y="35.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="172" name="Enemy" type="FlyShoot" x="3429" y="327.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="173" name="Enemy" type="FlyShoot" x="3880" y="345.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="178" name="Enemy" type="FlyShoot" x="3376" y="9.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="183" name="Enemy" type="FlyShoot" x="4625" y="19.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="188" name="Enemy" type="FlyShoot" x="6427" y="359.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="189" name="Enemy" type="FlyShoot" x="6717" y="357.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="193" name="Enemy" type="FlyShoot" x="5937" y="29.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="194" name="Enemy" type="FlyShoot" x="9280" y="335.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="196" name="Enemy" type="FlyShoot" x="9460" y="331.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="199" name="Enemy" type="FlyShoot" x="8754" y="348.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="205" name="Enemy" type="FlyShoot" x="9268" y="29.5" width="26" height="39">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0301.wav"/>
+    <property name="BallTexture" value="04-EastProject/0300.png"/>
+    <property name="DeadEffect" value="04-EastProject/0302.wav"/>
+    <property name="Texture" value="04-EastProject/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="206" name="Enemy" type="Branch" x="5274" y="205" width="30" height="50">
+   <properties>
+    <property name="AttEffect" value="04-EastProject/0401.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0402.wav"/>
+    <property name="Texture" value="04-EastProject/04.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

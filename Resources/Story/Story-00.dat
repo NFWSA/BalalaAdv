@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>character0</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/None.png</string>
+		<key>sentence0</key>
+		<string>相传，动漫世界是无数个平行的空间，彼此从不相交，而每个喜欢动漫的人，都能在自己所喜欢的动漫空间中获得快乐。</string>
+		<key>sentence1</key>
+		<string>然而不知何时开始，快乐慢慢变味，越来越多的人沉迷于平行世界不能自拔，而完全成为了主世界中的所谓“死宅”。</string>
+		<key>sentence2</key>
+		<string>其中，更是有许多所谓的“邪教”，其教徒丧心病狂之程度世所罕见，固有传闻曰：</string>
+		<key>sentence3</key>
+		<string>国之将亡，遍地舰娘。西方小马，祸国灾殃。</string>
+		<key>sentence4</key>
+		<string>惑音靡靡，学院偶像。浮世难济，东方大法。</string>
+		<key>sentence5</key>
+		<string>而，唯有魔仙，兴国安邦！</string>
+		<key>sentence6</key>
+		<string>当多个平行世界相交时，魔仙们终于决定，铲除这些邪教的根基，让世界恢复和平。</string>
+		<key>number</key>
+		<integer>7</integer>
+	</dict>
+	<key>number</key>
+	<integer>1</integer>
+</dict>
+</plist>

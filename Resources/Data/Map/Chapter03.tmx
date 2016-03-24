@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="300" height="20" tilewidth="32" tileheight="32" nextobjectid="69">
+ <tileset firstgid="1" name="Tiles03-01" tilewidth="32" tileheight="32" tilecount="240">
+  <image source="Tiles/Tiles03-01.png" width="512" height="480"/>
+ </tileset>
+ <tileset firstgid="241" name="Tiles03-02" tilewidth="32" tileheight="32" tilecount="192">
+  <image source="Tiles/Tiles03-02.png" width="512" height="384"/>
+  <tile id="104">
+   <properties>
+    <property name="Collision" value="True"/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="Pass" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Background" width="300" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztmeFtxCAMRrNqu0GbW+C6QTtx0x+RovRIjLGxSd6T0KerCBgMBtNpAjhnXsrjRv2CLasfz/wprQdwBPEKNMzTfx++8qm0HsAf0nOvN6zZsSn5Txqb8D9syb5uWK+5qM3XrOtlwMrW2na85nLv04w5ee19injlT/axatbEFePVitbm1rEefR9lkxcZxjO/KNbzr7FpPVPObLLuU/o7Eu29uzSX698elfV6UHvPiIrJVuul1v4ee8QzpnuSac96k3Wsrfv1Lm9YUfbX/s/16FyIJirXtsLa/sjc3Gvfe2Jxd9ifxaXzWVovO9o1plmjFnOTcX4lOZek1PQnzfm0dl+NLGPd7pdajs5vaf7vHae8zq7e9yvrN5qWN3erOe0Vo73oPV+Sdmu/zVK/9H1m/49AxPtVTVutMagHmvF493PWzqj3fyu83pXvFpdazy7p91E5Q887SMb3GI0/S8X7XTFbTLO802W8L23b3M+9NsfTlgz+viKtueBIXHFMUTCXADAKxKtz3pbyjqJouK7xKtqOzPqxlE8URdEB9LmULxRF0QH0eyk/KIqiA2h0vERRFJVqdLxEURSV6i9W0E86
+  </data>
+ </layer>
+ <layer name="Meta" width="300" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztmEEOwyAMBJNn9gn9/weqKsqhlUgw2HgJM9LeGgeMvTHdNoB7XvuhVd4LAPOCXwGACne+gG8AQDb/PlTyJfwKvpx1sHI9eO3dGqf2961xS1LAOk8prf2pqOeYmvildf+9ebt6PmtNUSjsR9HHM9Z01/8KeTlZae621kLU3GONF93bI3sk0tMjeWI/lFDdK/9t1pHl6bXnc+UzKmeYddf2wnv9mTNdb98rrtn6uxVorbGWGvXIu+LZ1dx5a2R9X68/KOYyCpW9epyXwj5KRH27Rs9XnnF7+35kvyvX1+h81cS1Pqvy+9Lzyuc/AxkzqCVWrweNoGU/mUR4zWxEf4dXyeuou0HWnWHkDBL53W+N63We0f2g6Gmea1Kcl+7Ouuad1hgZtbUy5BzAl/d+CABAHfwKAGbh9CvPuyVCCCGEEEIIIYQQQgghtKo+EGuVbw==
+  </data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="1" name="Player" x="22" y="359" width="68" height="99"/>
+  <object id="13" name="Enemy" type="Branch" x="8610" y="242" width="80" height="90">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0501.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0502.wav"/>
+    <property name="Texture" value="03-LoveLive/05.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="15" name="Enemy" type="Normal" x="558.5" y="185.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="16" name="Enemy" type="Normal" x="874.5" y="249.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="17" name="Enemy" type="Normal" x="1358.5" y="156.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="18" name="Enemy" type="Normal" x="2538.5" y="115.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="19" name="Enemy" type="Normal" x="2287.5" y="309.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="20" name="Enemy" type="Normal" x="3113.5" y="86.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="21" name="Enemy" type="Normal" x="3606.5" y="242.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="22" name="Enemy" type="Normal" x="4256.5" y="330.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="23" name="Enemy" type="Normal" x="4841.5" y="146.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="24" name="Enemy" type="Normal" x="5070.5" y="350.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="25" name="Enemy" type="Normal" x="5785.5" y="204.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="26" name="Enemy" type="Normal" x="6721.5" y="248.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="27" name="Enemy" type="Normal" x="7522.5" y="322.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="28" name="Enemy" type="Normal" x="8154.5" y="185.5" width="63" height="81">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0101.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0102.wav"/>
+    <property name="Texture" value="03-LoveLive/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="29" name="Enemy" type="Shoot" x="626.5" y="352" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="30" name="Enemy" type="Shoot" x="1356.5" y="333" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="31" name="Enemy" type="Shoot" x="1856.5" y="173" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="32" name="Enemy" type="Shoot" x="2192.5" y="86" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="33" name="Enemy" type="Shoot" x="3231.5" y="348" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="34" name="Enemy" type="Shoot" x="3959.5" y="56" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="35" name="Enemy" type="Shoot" x="4639.5" y="234" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="36" name="Enemy" type="Shoot" x="5552.5" y="249" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="37" name="Enemy" type="Shoot" x="6250.5" y="352" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="38" name="Enemy" type="Shoot" x="6483.5" y="179" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="39" name="Enemy" type="Shoot" x="7131.5" y="56" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="40" name="Enemy" type="Shoot" x="7857.5" y="246" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="41" name="Enemy" type="Shoot" x="8316.5" y="346" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="42" name="Enemy" type="Shoot" x="9327.5" y="254" width="47" height="74">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0201.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0200.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0202.wav"/>
+    <property name="Texture" value="03-LoveLive/02.png"/>
+   </properties>
+  </object>
+  <object id="43" name="Enemy" type="Normal" x="881" y="121" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="44" name="Enemy" type="Normal" x="1018" y="390" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="45" name="Enemy" type="Normal" x="1903" y="366" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="46" name="Enemy" type="Normal" x="2803" y="49" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="47" name="Enemy" type="Normal" x="3355" y="213" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="48" name="Enemy" type="Normal" x="3964" y="365" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="49" name="Enemy" type="Normal" x="4824" y="364" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="50" name="Enemy" type="Normal" x="5065" y="71" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="51" name="Enemy" type="Normal" x="5979" y="132" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="52" name="Enemy" type="Normal" x="7053" y="350" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="53" name="Enemy" type="Normal" x="7503" y="116" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="54" name="Enemy" type="Normal" x="8037" y="391" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="55" name="Enemy" type="Normal" x="8375" y="104" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="56" name="Enemy" type="Normal" x="8888" y="412" width="100" height="26">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0301.wav"/>
+    <property name="DeadEffect" value="03-LoveLive/0302.wav"/>
+    <property name="Texture" value="03-LoveLive/03.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="57" name="Enemy" type="Shoot" x="1686" y="384" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+  <object id="58" name="Enemy" type="Shoot" x="3396" y="406" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+  <object id="59" name="Enemy" type="Shoot" x="4160" y="195" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+  <object id="60" name="Enemy" type="Shoot" x="5180" y="268" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+  <object id="61" name="Enemy" type="Shoot" x="5817" y="401" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+  <object id="62" name="Enemy" type="Shoot" x="7658" y="221" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+  <object id="63" name="Enemy" type="Shoot" x="9131" y="414" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+  <object id="64" name="Enemy" type="Shoot" x="9098" y="276" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+  <object id="65" name="Enemy" type="Shoot" x="9215" y="128" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+  <object id="66" name="Enemy" type="Shoot" x="9085" y="159" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+  <object id="67" name="Enemy" type="Shoot" x="9187" y="198" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+  <object id="68" name="Enemy" type="Shoot" x="9365" y="153" width="80" height="24">
+   <properties>
+    <property name="AttEffect" value="03-LoveLive/0401.wav"/>
+    <property name="BallTexture" value="03-LoveLive/0400.png"/>
+    <property name="DeadEffect" value="03-LoveLive/0402.wav"/>
+    <property name="Texture" value="03-LoveLive/04.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>character0</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/小蓝.png</string>
+		<key>sentence0</key>
+		<string>这就是那些所谓的舰女人的一员么？好萌啊~</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character1</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/None.png</string>
+		<key>sentence0</key>
+		<string></string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character2</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/黑魔仙.png</string>
+		<key>sentence0</key>
+		<string>我们来就是要消灭她的，别花痴了。-_-#</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character3</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/岛风.png</string>
+		<key>sentence0</key>
+		<string>............</string>
+		<key>sentence1</key>
+		<string>我会让你们后悔的。</string>
+		<key>number</key>
+		<integer>2</integer>
+	</dict>
+	<key>number</key>
+	<integer>4</integer>
+</dict>
+</plist>

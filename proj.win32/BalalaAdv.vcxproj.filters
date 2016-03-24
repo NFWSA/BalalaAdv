@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Chapter">
+      <UniqueIdentifier>{43726f44-2572-4837-aef5-56bc44ff10fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Chapter\01-KanColle">
+      <UniqueIdentifier>{d6f93d2f-e394-4d27-965c-78ac6c9962de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Chapter\02-MyLittlePony">
+      <UniqueIdentifier>{b07bf11e-76fa-40ce-9681-e78efac7c55a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Chapter\03-LoveLive">
+      <UniqueIdentifier>{3a064f85-5596-44e9-a036-9001cd46c6d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Chapter\04-EastProject">
+      <UniqueIdentifier>{943a5f2a-dabc-4103-b951-7aea21015153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Chapter\Character">
+      <UniqueIdentifier>{f062b7e6-78ff-43aa-8be5-d1c9b70faac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Chapter\05-SOX">
+      <UniqueIdentifier>{1c5f0cc6-3c47-4081-89a9-edc4bab5777e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LauncherScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SplashScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SaveSelectScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\ChapterSelectScene.cpp">
+      <Filter>src\Chapter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\GameUILayer.cpp">
+      <Filter>src\Chapter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\UILinker.cpp">
+      <Filter>src\Chapter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\Character\Enemy.cpp">
+      <Filter>src\Chapter\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\Character\Player.cpp">
+      <Filter>src\Chapter\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\GameOverLayer.cpp">
+      <Filter>src\Chapter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\Character\FlyEnemy.cpp">
+      <Filter>src\Chapter\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\Character\BossEnemy.cpp">
+      <Filter>src\Chapter\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\Character\BranchEnemy.cpp">
+      <Filter>src\Chapter\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\DialogLayer.cpp">
+      <Filter>src\Chapter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\Character\ShootEnemy.cpp">
+      <Filter>src\Chapter\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\01-KanColle\FinalBoss01.cpp">
+      <Filter>src\Chapter\01-KanColle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\01-KanColle\Scene01.cpp">
+      <Filter>src\Chapter\01-KanColle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\02-MyLittlePony\FinalBoss02.cpp">
+      <Filter>src\Chapter\02-MyLittlePony</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\02-MyLittlePony\Scene02.cpp">
+      <Filter>src\Chapter\02-MyLittlePony</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\Character\FlyShootEnemy.cpp">
+      <Filter>src\Chapter\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\03-LoveLive\FinalBoss03.cpp">
+      <Filter>src\Chapter\03-LoveLive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\03-LoveLive\Scene03.cpp">
+      <Filter>src\Chapter\03-LoveLive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelpScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\04-EastProject\FinalBoss04.cpp">
+      <Filter>src\Chapter\04-EastProject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\04-EastProject\Scene04.cpp">
+      <Filter>src\Chapter\04-EastProject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chapter\05-SOX\Scene05.cpp">
+      <Filter>src\Chapter\05-SOX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CreditScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LauncherScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SplashScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SaveSelectScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\ChapterSelectScene.h">
+      <Filter>src\Chapter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\GameUILayer.h">
+      <Filter>src\Chapter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\UILinker.h">
+      <Filter>src\Chapter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\Character\Enemy.h">
+      <Filter>src\Chapter\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\Character\Player.h">
+      <Filter>src\Chapter\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\GameOverLayer.h">
+      <Filter>src\Chapter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\Character\FlyEnemy.h">
+      <Filter>src\Chapter\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\Character\BossEnemy.h">
+      <Filter>src\Chapter\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\Character\BranchEnemy.h">
+      <Filter>src\Chapter\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\DialogLayer.h">
+      <Filter>src\Chapter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\Character\ShootEnemy.h">
+      <Filter>src\Chapter\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\01-KanColle\FinalBoss01.h">
+      <Filter>src\Chapter\01-KanColle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\01-KanColle\Scene01.h">
+      <Filter>src\Chapter\01-KanColle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\02-MyLittlePony\FinalBoss02.h">
+      <Filter>src\Chapter\02-MyLittlePony</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\02-MyLittlePony\Scene02.h">
+      <Filter>src\Chapter\02-MyLittlePony</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\TypeDefine.h">
+      <Filter>src\Chapter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\Character\FlyShootEnemy.h">
+      <Filter>src\Chapter\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\03-LoveLive\FinalBoss03.h">
+      <Filter>src\Chapter\03-LoveLive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\03-LoveLive\Scene03.h">
+      <Filter>src\Chapter\03-LoveLive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelpScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\04-EastProject\FinalBoss04.h">
+      <Filter>src\Chapter\04-EastProject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\04-EastProject\Scene04.h">
+      <Filter>src\Chapter\04-EastProject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chapter\05-SOX\Scene05.h">
+      <Filter>src\Chapter\05-SOX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CreditScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>number</key>
+	<integer>3</integer>
+	<key>character0</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/小蓝.png</string>
+		<key>sentence0</key>
+		<string>我们现在所在的地方是哪里呢？</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character1</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/游乐.png</string>
+		<key>sentence0</key>
+		<string>据说是个叫做《舰队Collection》的世界，俗称舰娘，我们这次来就是为了消灭他们。</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character2</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/黑魔仙.png</string>
+		<key>sentence0</key>
+		<string>好了好了，快走吧，不要浪费时间了。</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+</dict>
+</plist>

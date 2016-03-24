@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" nextobjectid="9">
+ <tileset firstgid="1" name="Tiles04-03" tilewidth="32" tileheight="32" tilecount="140">
+  <image source="Tiles/Tiles04-01.png" width="640" height="224"/>
+ </tileset>
+ <tileset firstgid="141" name="Tiles04-04" tilewidth="32" tileheight="32" spacing="1" margin="1" tilecount="2">
+  <image source="Tiles/Tiles04-02.png" width="67" height="34"/>
+  <tile id="1">
+   <properties>
+    <property name="Collision" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Background" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF9ABhODApasnRk4UDYwO41JKjhxygi4ZpDdDt00UTp4e9yGIMDNSzFz0d4ApbdD8Tk9bwAfR0gC2M0f2oi0UfpYCYtESLOCaUlmiZtnDZS46dpJQ9uNIVPnupUV7B9ISiYXxupUZ5RU45OQoggFDdRitMKM5ohQG4tkP7
+  </data>
+ </layer>
+ <layer name="Meta" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFwxn04cCkqCVHzygYmYDcdDCafkYBCNC6PKGG+eSUk6NgYAGhOKMVBgBFIytF
+  </data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="1" name="Enemy" type="Boss" x="468" y="57" width="25" height="35">
+   <properties>
+    <property name="AI" value="04-EastProject/05.dat"/>
+    <property name="AttEffect" value="04-EastProject/0501.wav"/>
+    <property name="DeadEffect" value="04-EastProject/0502.wav"/>
+    <property name="From" value="Up"/>
+    <property name="Texture" value="04-EastProject/05.png"/>
+    <property name="To" value="Up"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="2" name="Player" x="467" y="534" width="27" height="43"/>
+  <object id="3" name="BossPos1" x="149" y="47" width="37" height="53">
+   <properties>
+    <property name="From" value="Left"/>
+    <property name="To" value="Left"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="4" name="BossPos4" x="153.5" y="357.5" width="37" height="53">
+   <properties>
+    <property name="From" value="Left"/>
+    <property name="To" value="Left"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="5" name="BossPos2" x="768.5" y="42.5" width="37" height="53">
+   <properties>
+    <property name="From" value="Right"/>
+    <property name="To" value="Right"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="6" name="BossPos3" x="767.5" y="353.5" width="37" height="53">
+   <properties>
+    <property name="From" value="Right"/>
+    <property name="To" value="Right"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="7" name="BossPos5" x="243" y="208" width="25" height="38">
+   <properties>
+    <property name="From" value="Down"/>
+    <property name="To" value="Up"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="8" name="BossPos6" x="691.5" y="205" width="25" height="38">
+   <properties>
+    <property name="From" value="Up"/>
+    <property name="To" value="Down"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

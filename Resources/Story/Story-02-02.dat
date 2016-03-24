@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>character0</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/None.png</string>
+		<key>sentence0</key>
+		<string></string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character1</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/塞拉斯提亚.png</string>
+		<key>sentence0</key>
+		<string>我是宇宙公主塞拉斯提亚，我会让你们明白，你们这是在自寻死路！</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>number</key>
+	<integer>2</integer>
+</dict>
+</plist>

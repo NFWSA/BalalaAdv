@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="20" tilewidth="32" tileheight="32" nextobjectid="36">
+ <tileset firstgid="1" name="Tiles05-01" tilewidth="32" tileheight="32" tilecount="128">
+  <image source="Tiles/Tiles05-01.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="129" name="Tiles05-02" tilewidth="32" tileheight="32" tilecount="256">
+  <image source="Tiles/Tiles05-02.png" width="512" height="512"/>
+  <tile id="64">
+   <properties>
+    <property name="Collision" value="True"/>
+   </properties>
+  </tile>
+  <tile id="66">
+   <properties>
+    <property name="Pass" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Background" width="100" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztl0EOgyAQAPldD/UDbdOD7an1/3c3MU3oBspCkYjOJBMNWRZZRdE5AAAAGydPAFiosSYu4lW8Eb8JRvEhPlV77B0Yi99rfgs1vxUv8S1OLj4Hv92PP0L+1uTuBY4WH+pXe+9UK6fleewxfwvWHrv3/HqM0jX3qz//JQDfnA0OGz9+zlPG4vRcdVuoHqGxdX5rbS3XmJpTqzqX+G//VP1zxkjdfx17R0RELHAG5jT8Ww==
+  </data>
+ </layer>
+ <layer name="Meta" width="100" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztlEsKwCAMBb3/raQX60IXpQRB0ZhHZmB2+vxEUwpE4OlCDKhHLKhHHOpHAGjwJ/Jwugeq51trncr9Z+86m3q+B7N7zTbemre7tirv8Va+B+r92uPuVv+ANU+9bwJAPka9DBERETV8Af4ayDk=
+  </data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="1" name="Player" x="22" y="328" width="59" height="89"/>
+  <object id="2" name="Enemy" type="Normal" x="435" y="354" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="4" name="Enemy" type="Normal" x="542.5" y="351" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="5" name="Enemy" type="Normal" x="692.5" y="350" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="6" name="Enemy" type="Normal" x="800.5" y="344" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="7" name="Enemy" type="Normal" x="606.5" y="96" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="8" name="Enemy" type="Normal" x="931.5" y="201" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="9" name="Enemy" type="Normal" x="778.5" y="77" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="10" name="Enemy" type="Normal" x="1205.5" y="348" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="11" name="Enemy" type="Normal" x="1319.5" y="357" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="12" name="Enemy" type="Normal" x="1312.5" y="118" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="13" name="Enemy" type="Normal" x="1433.5" y="356" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="14" name="Enemy" type="Normal" x="1439.5" y="104" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="15" name="Enemy" type="Normal" x="1602.5" y="364" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="16" name="Enemy" type="Normal" x="1733.5" y="154" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="17" name="Enemy" type="Normal" x="1992.5" y="359" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="18" name="Enemy" type="Normal" x="2199.5" y="376" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="19" name="Enemy" type="Normal" x="2114.5" y="102" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="20" name="Enemy" type="Normal" x="2553.5" y="195" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="21" name="Enemy" type="Normal" x="2429.5" y="384" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="22" name="Enemy" type="Normal" x="2790.5" y="363" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="23" name="Enemy" type="Normal" x="2790.5" y="165" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="24" name="Enemy" type="Normal" x="3084.5" y="238" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="25" name="Enemy" type="Normal" x="2942.5" y="95" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="26" name="Enemy" type="Normal" x="3056.5" y="8" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="27" name="Enemy" type="Normal" x="2324.5" y="94" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="28" name="Enemy" type="Normal" x="1992.5" y="79" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="29" name="Enemy" type="Normal" x="2444.5" y="34" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="30" name="Enemy" type="Normal" x="2223.5" y="15" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="31" name="Enemy" type="Normal" x="1856.5" y="53" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="32" name="Enemy" type="Normal" x="1643.5" y="83" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="33" name="Enemy" type="Normal" x="1121.5" y="57" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="34" name="Enemy" type="Normal" x="393.5" y="60" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="35" name="Enemy" type="Normal" x="247.5" y="130" width="73" height="86">
+   <properties>
+    <property name="AttEffect" value="05-SOX/0101.wav"/>
+    <property name="DeadEffect" value="05-SOX/0102.wav"/>
+    <property name="Texture" value="05-SOX/01.png"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

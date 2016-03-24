@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>character0</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/小蓝.png</string>
+		<key>sentence0</key>
+		<string>这次是哪里...我感觉我会迷路@_@</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>character1</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/游乐.png</string>
+		<key>sentence0</key>
+		<string>这里是《东方Project》的世界...很奇怪...这里的路大概是一种阵法吧...</string>
+		<key>sentence1</key>
+		<string>不管了，边走边看吧。</string>
+		<key>number</key>
+		<integer>2</integer>
+	</dict>
+	<key>character2</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/小蓝.png</string>
+		<key>sentence0</key>
+		<string>好。</string>
+		<key>number</key>
+		<integer>1</integer>
+	</dict>
+	<key>number</key>
+	<integer>3</integer>
+</dict>
+</plist>

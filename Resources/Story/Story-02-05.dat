@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>number</key>
+    <integer>3</integer>
+	<key>character0</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/None.png</string>
+		<key>number</key>
+		<integer>1</integer>
+		<key>sentence0</key>
+		<string></string>
+	</dict>
+	<key>character1</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/塞拉斯提亚.png</string>
+		<key>number</key>
+		<integer>3</integer>
+		<key>sentence0</key>
+		<string>哎，原来你也会爱的魔法么？</string>
+		<key>sentence1</key>
+		<string>我很少见到会这个魔法的人，今天真是幸运。</string>
+		<key>sentence2</key>
+		<string>就让我们用友谊来传播爱的魔法吧！</string>
+	</dict>
+    <key>character2</key>
+	<dict>
+		<key>Texture</key>
+		<string>CV/None.png</string>
+		<key>number</key>
+		<integer>1</integer>
+		<key>sentence0</key>
+		<string>塞拉斯提亚放松了警惕，解除了[护身魔法]并放弃了攻击。</string>
+	</dict>
+</dict>
+</plist>
